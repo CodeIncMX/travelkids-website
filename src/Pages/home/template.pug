@@ -1,0 +1,11 @@
+extends ../../Templates/home/template.pug
+
+block pageConfig
+	-config.title = 'Travel Kids - El mejor salon de Eventos de la Ciudad de México ';
+	-config.description = 'Travel Kids Salón de Eventos es el mejor salón de eventos de la CDMX, y el lugar perfecto de chicos y grandes ¡Somos expertos en crear sonrisas!';
+
+block main
+	include ../../Organisms/hero/template.pug
+	include ../../Organisms/start-section/template.pug
+
+	link(href='https://fonts.googleapis.com/css?family=Caveat:700&display=swap' rel='stylesheet')

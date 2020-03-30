@@ -1,0 +1,24 @@
+@import '~@codeinc.mx/hero-component/scss/basic.scss';
+@import "../../Atoms/heading/style.scss";
+@import "../../Molecules/monuments/style.scss";
+
+$hero__className: 'hero';
+
+@include basic-hero($hero__className, (full-screen: false)) {
+
+  width: 100vw;
+  height: 450px;
+
+  &__slogan {
+    @include is-heading('cursive') {
+      position: absolute;
+      top: 90px;
+    }
+  }
+
+    @include add-monuments();
+}
+
+@include bg-parallax($hero__className){
+  background: linear-gradient(90deg, #00a8e0, #00c0e2);
+}

@@ -1,0 +1,8 @@
+extends ~@codeinc.mx/hero-component/pug/basic.pug
+
+block config
+  - config.className = 'hero'
+
+block content
+  h2(class=(config.className + "__slogan")) Porque viajar es increíble
+  include ../../Molecules/monuments/template.pug
