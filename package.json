@@ -1,6 +1,6 @@
 {
   "name": "travelkids-website",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Travel Kids Salón Web Site",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "@babel/runtime": "7.7.7",
     "@codeinc.mx/hero-component": "0.4.2",
-    "@codeinc.mx/page-template-component": "0.2.1"
+    "@codeinc.mx/page-template-component": "0.2.2"
   },
   "devDependencies": {
     "@babel/core": "7.7.7",
