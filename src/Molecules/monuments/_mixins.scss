@@ -7,12 +7,19 @@
   $dx,
   $init__top,
   $grow__factor,
-  $initial__vh: 568px
+  $initial__vh: 568px,
 ) {
   @include parallax-position-element($parallax__position);
   animation-delay: $delay;
-  left: 50%;
   height: $h * $scale;
+
+  left: 50%;
   margin-left: - ($w * $scale / 2) + $dx;
+
+  @include set-mediaquery(lg) {
+    left: 70%;
+    margin-left: - ($w / 2) + $dx;
+  }
+
   top: calc(#{$init__top} - calc( (100vh - #{$initial__vh}) / #{$grow__factor}) );
 }

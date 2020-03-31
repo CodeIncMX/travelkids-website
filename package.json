@@ -1,6 +1,6 @@
 {
   "name": "travelkids-website",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Travel Kids Salón Web Site",
   "main": "index.js",
   "scripts": {

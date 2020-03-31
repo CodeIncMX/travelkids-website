@@ -22,12 +22,13 @@ $hero__className: 'hero';
     }
 
     @include is-heading(cursive) {
+      width: 100%;
       position: absolute;
       top: 90px;
     }
   }
 
-    @include add-monuments();
+  @include add-monuments();
 }
 
 @include bg-parallax($hero__className){
