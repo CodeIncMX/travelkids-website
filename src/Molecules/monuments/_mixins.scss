@@ -1,0 +1,18 @@
+@mixin set-svg(
+  $delay,
+  $parallax__position,
+  $w,
+  $h,
+  $scale,
+  $dx,
+  $init__top,
+  $grow__factor,
+  $initial__vh: 568px
+) {
+  @include parallax-position-element($parallax__position);
+  animation-delay: $delay;
+  left: 50%;
+  height: $h * $scale;
+  margin-left: - ($w * $scale / 2) + $dx;
+  top: calc(#{$init__top} - calc( (100vh - #{$initial__vh}) / #{$grow__factor}) );
+}

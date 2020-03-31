@@ -1,6 +1,6 @@
 @mixin is-heading($style){
 
-  @if $style == 'cursive' {
+  @if $style == cursive {
     text-align: center;
     color: rgba(#fff, 0.8);
     text-shadow: 3px 3px 7px rgba(0,0,0,0.2);

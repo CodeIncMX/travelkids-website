@@ -7,10 +7,21 @@ $hero__className: 'hero';
 @include basic-hero($hero__className, (full-screen: false)) {
 
   width: 100vw;
-  height: 450px;
+
+  &__container {
+    height: 530px;
+    position: relative;
+  }
 
   &__slogan {
-    @include is-heading('cursive') {
+    @include animate(fadeIn) {
+      opacity: 0;
+      animation-delay: 1.4s;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    @include is-heading(cursive) {
       position: absolute;
       top: 90px;
     }
