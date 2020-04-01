@@ -1,10 +1,10 @@
-@import '~@codeinc.mx/hero-component/scss/basic.scss';
+@import '~@codeinc.mx/hero-component/scss/hero.scss';
 @import "../../Atoms/heading/style.scss";
 @import "../../Molecules/monuments/style.scss";
 
 $hero__className: 'hero';
 
-@include basic-hero($hero__className, (full-screen: false)) {
+@include hero(basic, $hero__className, (full-screen: false)) {
 
   width: 100vw;
 

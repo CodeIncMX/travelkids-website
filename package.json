@@ -1,6 +1,6 @@
 {
   "name": "travelkids-website",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Travel Kids Salón Web Site",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "7.7.7",
-    "@codeinc.mx/hero-component": "0.4.2",
+    "@codeinc.mx/hero-component": "0.5.0",
     "@codeinc.mx/page-template-component": "0.2.2"
   },
   "devDependencies": {
